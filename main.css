@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:Roboto, sans-serif ;
+}
+
+#button-default {
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 100%;
+
+}
+
+#button-default:hover {
+    background-color: rgba(114, 114, 114, 0.671);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    color: aliceblue;
+}
+
+.container-flex {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-weight: 100px;
+}
+
+header input {
+    max-width: 80%;
+    height: 24px;
+    border-radius: 5px;
+}
+h1 {
+    text-align: left;
+}
+
+
+section {
+    padding: 12px 0;
+    }
+
+.menu > li {
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+header  {
+    border-bottom: 8px solid rgba(0, 0, 255, 0.815);
+    padding: 12px 0;
+    background-color: rgb(20, 101, 168);
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    border:1px solid blue;
+    background-color: #fff;
+    position:absolute;
+    left:0;
+    width: 300px;
+    top: 100%;
+    z-index: 2;
+    
+}
+
+.menu li:hover .submenu {
+    display: block;
+    background-color: aliceblue(202, 209, 214);
+}
+.menu > li {
+    float: left;
+    font-weight: bold;
+    list-style: none;
+    color: aliceblue;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+#carousel-imagens {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#carousel-imagens img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+#sobre-a-loja {
+    background-color: rgb(20, 101, 168);
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.social-media-buttons {
+    list-style: none;
+
+}
+
+.social-media-buttons a{
+    text-decoration: none;
+}
+.container img {
+    max-width: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista-tenis{
+    flex-wrap: wrap;
+    display: flex;
+}
+.lista-tenis li{
+    list-style: none;
+    max-width: 20%;
+    margin: 24px;
+}
+
+
+.lista-tenis li img{
+    max-width: 100%;
+    height: auto; 
+
+}
+
+@media screen and (max-width:980px) {
+
+    header form {
+        height: auto;
+        border-radius: 5px;
+    }
+
+}   
+#sobre-a-loja img {
+    display: none;
+}
+
+.lista-tenis {
+    font-size: small
+}
+
+header {
+    max-width: 100%;
+}
+
+@media screen and (max-width:800px) {
+    #carousel-imagens {
+        display: none;
+    }
+}
